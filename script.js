@@ -59,3 +59,8 @@ choices.forEach((choice) => {
         playGame(userChoice);
     });
 });
+document.getElementById('reset-btn').addEventListener('click', () => {
+    document.getElementById('user-score').textContent = '0';
+    document.getElementById('comp-score').textContent = '0';
+    document.getElementById('msg').textContent = 'Play your move!';
+});
